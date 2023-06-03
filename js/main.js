@@ -32,8 +32,7 @@ myBtn.onclick = function ceratePasseord() {
 iconCopy.onclick = function () {
   passowrdBOX.select();
   document.execCommand("copy");
-};
-
-passowrdBOX.onblur = function () {
-  passowrdBOX.value = "";
+  if (passowrdBOX.value !== "") {
+    passowrdBOX.value = "";
+  }
 };
